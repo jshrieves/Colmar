@@ -7,6 +7,8 @@
   <link href="./resources/style.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Roboto:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 
@@ -17,12 +19,12 @@
 
 <header>
   <!--Nav Bar-Desktop-->
-  <nav class="nav-desktop">
-    <div class="logo">
+  <nav>
+    <div class="logo" role="navigation">
       <img src="./resources/images/ic_home.png">
       <h3>COLMAR</h3><h3>ACADEMY</h3>
     </div>
-      <ol>
+      <ol role="presentation">
         <li><a href="#">On Campus</a></li>
         <li><a href="#">Online</a></li>
         <li><a href="#">For Companies</a></li>
@@ -31,7 +33,7 @@
   </nav>
 
   <!--Nav Bar-Mobile-->
-  <nav class="nav-mobile">
+  <nav class="nav-mobile" role="navigation">
     <img src="./resources/images/ic_home.png">
     <img src="./resources/images/ic_oncampus.png">
     <img src="./resources/images/ic_online.png">
@@ -40,7 +42,7 @@
 </header>
 
 <!--Banner-->
-<div class="banner">
+<div class="banner" role="banner">
   <div class="feature-image-main">
     <img src="./resources/images/banner.jpg" alt="Learning"/>
   </div>
@@ -53,7 +55,7 @@
 
 <!--First Feature Section-->
 <div class="first-feature">
-  <div class="feature-image-main">
+  <div class="feature-image-main" role="complementary">
     <img src="./resources/images/information-main.jpg" alt="Man reading."/>
     <div class="image-main-textbox">
       <h1>It doesn't hurt to keep practicing.</h1>
@@ -111,8 +113,8 @@
 </div>
 
 <!--Second Feature Section-->
-<div class="features">
-  <h1>Start Learning</h1>
+<div class="features" role="columnheader">
+  <h1>Start Learning.</h1>
     <div class="second-feature-images">
       <div class="content-container">
         <div class="image-container">
@@ -163,8 +165,8 @@
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
       </div>
   </div>
-  <div class="mobile-courses">
-    <ol>
+  <div class="mobile-courses" role="link">
+    <ol role="presentation">
       <li><h2>Software engineering</h2></li>
       <li><h2>Computer art</h2></li>
       <li><h2>Design</h2></li>
@@ -176,7 +178,7 @@
 </div>
 
 <!--Third Feature Section-->
-<div class="third-feature-heading">
+<div class="third-feature-heading" role="columnheader">
 <h1>Thesis Exhibit</h1>
 </div>
 <div class="third-feature">
@@ -184,7 +186,7 @@
     <div class="video">
     <video src="./resources/videos/thesis.mp4" controls>Video Not Supported
     </div>
-    <div class="image-main-textbox">
+    <div class="image-main-textbox" role="complementary">
       <h1>Reimagine urban.</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus mi in quam elementum rutrum sed a nibh. Vestibulum non tellus non nibh vulputate sagittis.</p>
     </div>
@@ -217,15 +219,15 @@
 
   <!--Footer-->
 
-  <div class="footer">
+  <footer>
     <div class="copyright">
       <span>Colmar Academy. All Rigths Reserved</span>
     </div>
-    <div class="footer-links">
-      <span>Terms</span>
-      <span>Privacy</span>
+    <div class="footer-links" role="link">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
     </div>
-  </div>
+  </footer>
 
 
 

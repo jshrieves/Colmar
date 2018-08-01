@@ -4,8 +4,8 @@ html {
 }
 
 body {
-  color: grey;
   margin: 0;
+  color: #1f1f14
 }
 
 /*Universal Font-Desktop*/
@@ -26,7 +26,8 @@ h3 {
 
 p,
 span,
-li {
+li,
+a {
   font-size: 1.15rem;
   font-family: "Open Sans";
 }
@@ -47,7 +48,8 @@ li {
   }
 
   p,
-  span {
+  span,
+  li {
     font-size: 1rem;
   }
 }
@@ -87,8 +89,8 @@ li {
   width: 100%;
   align-items: center;
   padding: 1rem 0.5rem;
-  margin: 1rem 0;
-  background-color: lightgrey;
+  margin: .5rem 0;
+  background-color: #e0e0d1;
 }
 
 .textbox {
@@ -98,6 +100,10 @@ li {
 
 .textbox p {
   padding: 0.5rem 0;
+}
+
+.textbox a:hover {
+  color: #990000;
 }
 
 /*Navigation Bar-Desktop*/
@@ -112,14 +118,14 @@ header {
   box-shadow: 0rem 0rem 0.5rem 0rem;
 }
 
-.nav-desktop {
+nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
 }
 
-.nav-desktop .logo {
+nav .logo {
   display: flex;
   align-items: center;
 }
@@ -138,14 +144,20 @@ header {
   color: black;
 }
 
-.nav-desktop li {
+nav li {
   list-style: none;
   display: inline-flex;
   margin-right: 1rem;
 }
 
-.nav-desktop li:last-child {
+nav li:last-child {
   margin-right: 0;
+}
+
+nav a:hover {
+  background-color:#660000;
+  color: white;
+  padding: .6rem;
 }
 
 .nav-mobile {
@@ -155,13 +167,20 @@ header {
 /*Navigation Bar-Mobile*/
 
 @media only screen and (max-width: 850px) {
-  .nav-desktop {
+  nav {
     display: none;
+    }
+    header {
+      display: flex;
+      align-items: center;
     }
     .nav-mobile {
       display: flex;
+      width: 100%;
       justify-content: space-around;
-      padding: .75rem;
+    }
+    .nav-mobile img {
+      padding: .5rem;
     }
 }
 /*Banner*/
@@ -172,7 +191,7 @@ header {
   height: auto;
   align-items: center;
   padding-top: 4rem;
-  background-color: #f5f5f0;
+  background-color: #e0e0d1;
 }
 
 .banner-info {
@@ -195,6 +214,10 @@ header {
   padding: 0.5rem;
   text-align: center;
   margin-top: 1.5rem;
+}
+
+.banner-info h3:hover {
+  font-weight: bold;
 }
 
 /*Banner-Mobile*/
@@ -231,6 +254,7 @@ header {
 
 .image-main-textbox p {
   padding: 1.5rem 0;
+  font-style: italic;
 }
 
 .mobile-image {
@@ -280,11 +304,13 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: lightgrey;
+  background-color: #660000;
 }
 
 .features h1 {
   padding-top: 2rem;
+  color: white;
+  font-weight: bold;
 }
 
 .second-feature-images {
@@ -294,6 +320,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 1rem 4.5rem 2rem 4.5rem;
+  background-color: #660000;
 }
 
 .content-container {
@@ -302,10 +329,13 @@ header {
   width: 25%;
   margin: 2rem;
   background-color: white;
+  box-shadow: 0rem .05rem .1rem 0rem grey;
+  padding: .5rem;
 }
 
 .content-container h2 {
   padding: 1rem;
+  background-color:
 }
 
 .content-container p {
@@ -347,6 +377,7 @@ header {
   .mobile-courses {
     display: block;
     width: 90%;
+    text-align: center;
   }
   .mobile-courses ol {
     padding: 1rem 1rem 2rem 1rem;
@@ -355,8 +386,13 @@ header {
     text-decoration: none;
     padding: 1rem 1rem 1.5rem 1rem;
     margin: 0.5rem;
-    background-color: grey;
+    background-color: white;
     color: black;
+    border: .25rem solid white;
+    border-radius: .5rem;
+  }
+  .mobile-courses h2 {
+    font-size: 1.35rem;
   }
 }
 
@@ -364,6 +400,7 @@ header {
 .third-feature {
   display: flex;
   width: 100%;
+  padding-top: 1rem;
 }
 
  .third-feature-heading {
@@ -390,27 +427,29 @@ header {
 
   .third-feature .feature-image-main {
     width: 100%;
+    padding-bottom: 2rem;
   }
   .third-feature .image-main-textbox {
     display: none;
   }
-  .third-feature-heading {
-    padding-bottom: 1rem;
-  }
 }
 
 /*Footer*/
- .footer {
+ footer {
    display: flex;
    justify-content: space-between;
    padding: 2rem;
+   background-color: #adad85;
+ }
+ .footer-links a {
+   padding: .5rem;
  }
 
  @media only screen and (max-width: 800px) {
    .footer-links {
      display: none;
    }
-   .footer {
+   footer {
      justify-content: center;
    }
  }
